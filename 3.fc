@@ -21,6 +21,7 @@ In particular:
 
 The initial address memorizer storage contains owner address immediately followed by empty address (`addr_none` constructor for MsgAddress).
 
+
 -}
 
 int equal_slices (slice a, slice b) asm "SDEQ";
