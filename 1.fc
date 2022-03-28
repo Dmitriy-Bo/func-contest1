@@ -15,7 +15,7 @@ If the body of the incoming message is less than 32 bits then it should throw AN
 -}
 
 ;; testable
-() recv_internal(slice in_msg_body) impure {
+recv_internal(slice_in_msg_body) impure {
   throw_if(in_msg.slice_bits() < 32);
   int n = in_msg~load_uint(32);
 
